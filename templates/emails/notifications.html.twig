@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ContactController!{% endblock %}
+
+{% block body %}
+
+<div class="container">
+<div class="row">
+<div class="col">
+<h2>vous avez un nouveau message disponible</h2>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col">
+<p> sujet : {{ contact.sujet }}</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col">
+<p> email : {{ contact.email }}</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col">
+<p> nom : {{ contact.nom }}</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col">
+<p> message : {{ contact.message }}</p>
+</div>
+</div>
+
+
+
+
+
+
+{% endblock %}
